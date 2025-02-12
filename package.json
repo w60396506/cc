@@ -1,0 +1,19 @@
+{
+  "name": "sound-buttons",
+  "version": "1.0.0",
+  "description": "音效按钮",
+  "author": "Your Name",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --config electron-builder.yml",
+    "build:mac": "electron-builder --mac --config electron-builder.yml",
+    "build:win": "electron-builder --win --config electron-builder.yml"
+  },
+  "devDependencies": {
+    "electron": "20.0.0",
+    "electron-builder": "23.6.0",
+    "@electron/rebuild": "^3.2.10"
+  }
+}

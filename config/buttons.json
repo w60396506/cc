@@ -1,0 +1,35 @@
+{
+  "buttons": [
+    {
+      "category": "主持",
+      "index": 0,
+      "id": "主持-button-1739339158511-1hg1qhmgx",
+      "name": "（脚步声）",
+      "audioPath": "C:\\Users\\Administrator\\Desktop\\electron-app1-main\\audio\\1739339163274-（脚步声）.mp3",
+      "isEmpty": false,
+      "hotkey": ""
+    },
+    {
+      "category": "主持",
+      "index": 1,
+      "id": "主持-button-1739339159078-c6x9qrqoo",
+      "name": "",
+      "audioPath": "",
+      "isEmpty": true,
+      "hotkey": ""
+    },
+    {
+      "category": "主持",
+      "index": 2,
+      "id": "主持-button-1739339159510-ru6e8c96y",
+      "name": "",
+      "audioPath": "",
+      "isEmpty": true,
+      "hotkey": ""
+    }
+  ],
+  "audioOutput": {
+    "deviceId": "6b47cab302f4d1ba1acbd75ae572f1888d8d5accd94dbbcfcf1b04f107eee1bf",
+    "label": "Wave Out 4/5 (kX 10k2 Audio (3552) - Generic)"
+  }
+}
