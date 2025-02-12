@@ -40,14 +40,19 @@ nsis:
 mac:
   target: dmg
   icon: build/icon.icns
-  artifactName: "${productName}-${version}-${arch}.${ext}"
-  category: public.app.category.utilities
-  minimumSystemVersion: "10.13.0"
-  identity: null
   hardenedRuntime: false
   gatekeeperAssess: false
+  darkModeSupport: true
+  minimumSystemVersion: "10.13.6"
   entitlements: null
   entitlementsInherit: null
-  signIgnore: true
+
 dmg:
-  sign: false 
+  sign: false
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: "link"
+      path: "/Applications" 
