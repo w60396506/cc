@@ -14,22 +14,16 @@ jobs:
         with:
           node-version: 16
           
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '2.7'
-          
       - name: Install dependencies
         run: |
-          python --version
+          npm install electron-builder@22.11.11 --save-dev
           npm install
-        
+          
       - name: Build
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
           ELECTRON_BUILDER_SIGN: false
           DEBUG: electron-builder
-          PATH: /usr/local/bin:$PATH
         run: npm run build
         
       - name: Upload artifacts

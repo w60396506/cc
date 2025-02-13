@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "electron": "16.0.0",
-    "electron-builder": "22.14.13",
+    "electron-builder": "22.11.11",
     "@electron/rebuild": "^3.2.10"
   }
 }
