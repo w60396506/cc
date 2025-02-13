@@ -7,7 +7,7 @@
   "private": true,
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --mac --config electron-builder.yml"
+    "build": "electron-builder --mac --config electron-builder.yml --publish never"
   },
   "devDependencies": {
     "electron": "^20.0.0",

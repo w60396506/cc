@@ -21,7 +21,6 @@ jobs:
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
           ELECTRON_BUILDER_SIGN: false
-          ELECTRON_BUILDER_PUBLISH: never
         run: npm run build
         
       - name: Upload artifacts
