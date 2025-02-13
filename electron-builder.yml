@@ -22,6 +22,8 @@ extraResources:
     to: "../config/"
     filter: ["**/*"]
 
+publish: never
+
 win:
   target: 
     - target: nsis
