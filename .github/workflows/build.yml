@@ -8,22 +8,19 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v3
         with:
           node-version: 16
           
       - name: Install dependencies
-        run: |
-          npm install electron-builder@22.11.11 --save-dev
-          npm install
-          
+        run: npm install
+        
       - name: Build
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
           ELECTRON_BUILDER_SIGN: false
-          DEBUG: electron-builder
         run: npm run build
         
       - name: Upload artifacts
