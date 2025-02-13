@@ -19,21 +19,21 @@ jobs:
         with:
           python-version: '3.x'
           
-      - name: Install dependencies
+      - name: Create Python symlink
         run: |
-          npm install
-          python -V
-          which python
+          sudo ln -sf $(which python3) /usr/bin/python
+          ls -la /usr/bin/python
+          python --version
+          
+      - name: Install dependencies
+        run: npm install
         
       - name: Build
         env:
           CSC_IDENTITY_AUTO_DISCOVERY: false
           ELECTRON_BUILDER_SIGN: false
           DEBUG: electron-builder
-          PYTHON_PATH: $(which python)
-        run: |
-          npm run build
-          ls -la dist/
+        run: npm run build
         
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
